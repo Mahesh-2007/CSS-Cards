@@ -1,0 +1,90 @@
+<style>
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    margin: 10px;
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  .description p {
+    padding-top: 17%;
+  }
+  .card:hover .description {
+    opacity: 1;
+  }
+  @media only screen and (max-width: 768px) {
+  .card {
+    width: 80%; /* Adjusted width for mobile devices */
+    height: 30%; /* Adjusted height for mobile devices */
+    
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 90%; /* Further adjusted width for smaller mobile devices */
+    height: 25%; /* Further adjusted height for smaller mobile devices */
+   display: none;
+  }
+}
+  
+  </style>
+  
+  <div class="card-container">
+    <div class="card">
+      <a href="https://www.google.com"><img src="Screenshot (20).png" alt="Image 1">
+      <div class="description">
+        <p>PORTFOIO MADE WITH HTML,CSS & JAVASCRIPT</p>
+      </div></a>
+    </div>
+    <div class="card">
+      <a href="https://www.google.com"><img src="Screenshot (21).png" alt="Image 2">
+      <div class="description">
+        <p>TODOLIST MADE WITH HTML,CSS & JAVASCRIPT</p>
+      </div></a>
+    </div>
+    <div class="card">
+      <a href="https://www.google.com"><img src="Screenshot (22).png" alt="Image 2">
+      <div class="description">
+        <p>GUESS THE NUMBER GAME MADE WITH HTML,CSS & JAVASCRIPT</p>
+      </div></a>
+    </div>
+    <div class="card">
+      <a href="https://www.google.com"><img src="Screenshot (23).png" alt="Image 2">
+      <div class="description">
+        <p>NOTES MADE WITH HTML,CSS & JAVASCRIPT</p>
+      </div></a>
+    </div>
+    <div class="card">
+      <a href="https://www.google.com"><img src="Screenshot (25).png" alt="Image 2">
+      <div class="description">
+        <p>CALCULATOR MADE WITH HTML,CSS & JAVASCRIPT</p>
+      </div></a>
+    </div>
+  </div>
